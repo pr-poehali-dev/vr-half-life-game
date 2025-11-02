@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import { VRButton, XR, Controllers, Hands } from '@react-three/xr';
+import { VRButton, XR } from '@react-three/xr';
 import { Physics } from '@react-three/rapier';
 import { EffectComposer, Bloom, Vignette, ChromaticAberration } from '@react-three/postprocessing';
 import { Environment, Sky } from '@react-three/drei';
@@ -34,9 +34,6 @@ export const VRGame = () => {
         }}
       >
         <XR>
-          <Controllers />
-          <Hands />
-          
           <color attach="background" args={['#0a0d14']} />
           <fog attach="fog" args={['#0a0d14', 10, 50]} />
 
